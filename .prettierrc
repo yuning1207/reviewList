@@ -1,0 +1,24 @@
+{
+  "printWidth": 100,
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "semi": true,
+  "singleQuote": false,
+  "plugins": ["@prettier/plugin-pug"],
+  "overrides": [
+    {
+      "files": ["*.tsx"],
+      "options": {
+        "parser": "typescript",
+        "jsxSingleQuote": false,
+        "jsxBracketSameLine": false
+      }
+    },
+    {
+      "files": ["*.ts"],
+      "options": {
+        "parser": "typescript"
+      }
+    }
+  ]
+}
